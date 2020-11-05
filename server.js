@@ -15,7 +15,7 @@ server.use('/api/posts', postRouter);
 server.use('/api/users', userRouter);
 server.use((error, req, res, next) => {
   console.log('Error!', error);
-})
+});
 
 server.get('/', (req, res) => {
   res.send(`<h2>Let's write some middleware!</h2>`);
