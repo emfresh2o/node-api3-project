@@ -26,7 +26,7 @@ function logger(req, res, next) {
   const seconds = new Date().getSeconds();
 
   if (seconds % 3 === 0) {
-    res.status(403).json({ message: 'api is down....  for now' });
+    res.status(403).json({ message: 'api is down....  pls. try again later!' });
   } else {
     next(0);
   }
